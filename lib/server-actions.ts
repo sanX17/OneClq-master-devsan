@@ -1,9 +1,20 @@
 import "server-only";
-import { adminDb } from "./firebase-admin";
+import { getAdminDb } from "./firebase-admin";
 import { Product, ShopProduct, UserProfile, WardrobeData } from "./typings";
+
+function getAdminDbOrThrow() {
+  const adminDb = getAdminDb();
+
+  if (!adminDb) {
+    throw new Error("Firebase Admin credentials are not configured");
+  }
+
+  return adminDb;
+}
 
 export async function getUserProfileByUsername(username: string) {
   try {
+    const adminDb = getAdminDbOrThrow();
     const snapshot = await adminDb
       .collection("users")
       .where("username", "==", username)
@@ -34,6 +45,7 @@ export async function getUserProfileByUsername(username: string) {
 
 export async function getProductById(productId: string) {
   try {
+    const adminDb = getAdminDbOrThrow();
     const snapshot = await adminDb
       .collection("products")
       .where("productId", "==", productId)
@@ -70,6 +82,7 @@ export async function getProductById(productId: string) {
 
 export async function getWardrobeById(wardrobeId: string) {
   try {
+    const adminDb = getAdminDbOrThrow();
     const snapshot = await adminDb
       .collection("wardrobes")
       .where("wardrobeId", "==", wardrobeId)
