@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.oneclq.oneclq.com",
+      "sha256_cert_fingerprints": [
+        "2B:33:17:30:D2:4D:42:E3:55:A9:9C:7C:CD:E1:FC:EB:5A:54:04:48:3C:71:7D:69:69:4D:26:D6:29:EC:DE:12",
+        "07:E3:38:B8:5A:18:D5:84:D8:D4:5F:DC:22:A0:48:66:62:70:5E:EB:AF:C9:EE:71:92:D9:2F:26:EA:87:B1:84"
+      ]
+    }
+  }
+]

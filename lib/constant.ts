@@ -1,0 +1,16 @@
+export const APPNAME = process.env.NEXT_PUBLIC_APP_NAME || "Oneclq";
+export const HERO_TAGLINE = process.env.NEXT_PUBLIC_HERO_TAGLINE || "";
+export const LOGO_TAGLINE = process.env.NEXT_PUBLIC_LOGO_TAGLINE || "";
+export const DOWNLOAD_APP = process.env.NEXT_PUBLIC_DOWNLOAD_APP || "";
+export const TAGLINE = process.env.NEXT_PUBLIC_TAGLINE || "";
+export const SIGNUP_TAGLINE = process.env.NEXT_PUBLIC_SIGNUP_TAGLINE || "";
+export const PLAYSTORE = process.env.NEXT_PUBLIC_PLAYSTORE || "";
+export const EARLY_ACCESS = process.env.NEXT_PUBLIC_EARLY_ACCESS || "";
+export const APPSTORE = process.env.NEXT_PUBLIC_APPSTORE || "";
+export const INSTAGRAM = process.env.NEXT_PUBLIC_INSTAGRAM || "";
+export const TWITTER = process.env.NEXT_PUBLIC_TWITTER || "";
+export const LINKEDIN = process.env.NEXT_PUBLIC_LINKEDIN || "";
+export const MARQUEE_TAG_1 = process.env.NEXT_PUBLIC_MARQUEE_TAG_1 || "";
+export const MARQUEE_TAG_2 = process.env.NEXT_PUBLIC_MARQUEE_TAG_2 || "";
+export const MARQUEE_TAG_3 = process.env.NEXT_PUBLIC_MARQUEE_TAG_3 || "";
+export const MARQUEE_TAG_4 = process.env.NEXT_PUBLIC_MARQUEE_TAG_4 || "";
